@@ -11,6 +11,7 @@ public class Car {
     int currentFuel;
     int consumption; //po kilometru
     int mileage = 0;
+    int yearManufactured;
     
     
     public Car() {
@@ -18,15 +19,17 @@ public class Car {
         this.model = "default";
         this.maxFuel = 100;
         this.consumption = 5;
+        this.yearManufactured = 1950;
         
     }
     
-    public Car(String customModel, int customMaxFuel, int customConsumption, String customLicence) {
+    public Car(String customModel, int customMaxFuel, int customConsumption, String customLicence, int customYearManufactured) {
     
         this.model = customModel;
         this.maxFuel = customMaxFuel;
         this.consumption = customConsumption;
         this.licence = customLicence;
+        this.yearManufactured = customYearManufactured;
         
     }
     
@@ -39,6 +42,7 @@ public class Car {
         System.out.println("Trenutno stanje rezervoara: " + this.currentFuel);
         System.out.println("Tezina: " + this.weight);
         System.out.println("Ukupna predjena distanca: " + this.mileage);
+        System.out.println("Godina proizvodnje: " + this.yearManufactured);
         System.out.println();
     }
     
@@ -82,6 +86,55 @@ public class Car {
         
         
     }
+    
+    public void checkYearManufactured (int year) {
+        
+        if(year < 1990) {
+            System.out.println("Auto je oldtimer");
+            
+        } else if(year >= 1990 && year <= 2013) {
+        
+            System.out.println("Auto je relativno nov");
+        } else {
+        
+            System.out.println("Auto je nov");
+        }
+    }
+    
+    public void setYearManufactured(int year) {
+    
+        this.yearManufactured = year;
+        
+    }
+    
+    public int getYearManufactured() {
+    
+        return this.yearManufactured;
+    }
+    
+    public void setCurrentFuel(int newFuel) {
+        
+        this.currentFuel = newFuel;
+    }
+    
+    public int getCurrentFuel() {
+    
+        return this.currentFuel;
+    }
+    
+    public void setWeight(double newWeight) {
+    
+        this.weight = newWeight;
+    
+    }
+    
+    public double getWeight() {
+    
+        return this.weight;
+        
+    }
+    
+    
     
     
     
