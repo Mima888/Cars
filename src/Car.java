@@ -12,6 +12,7 @@ public class Car {
     int consumption; //po kilometru
     int mileage = 0;
     int yearManufactured;
+    boolean lights;
     
     
     public Car() {
@@ -20,6 +21,7 @@ public class Car {
         this.maxFuel = 100;
         this.consumption = 5;
         this.yearManufactured = 1950;
+        this.lights = true;
         
     }
     
@@ -43,6 +45,7 @@ public class Car {
         System.out.println("Tezina: " + this.weight);
         System.out.println("Ukupna predjena distanca: " + this.mileage);
         System.out.println("Godina proizvodnje: " + this.yearManufactured);
+        System.out.println("Da li su svetla ukljucena: " + this.lights);
         System.out.println();
     }
     
@@ -134,8 +137,15 @@ public class Car {
         
     }
     
+    public void setLights(boolean newState) {
     
+        this.lights = newState;
+    }
     
+    public boolean getLights() {
     
-    
+        return this.lights;
+    }
+
+  
 }

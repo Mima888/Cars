@@ -48,6 +48,9 @@ public class Main {
         //opel.setYearManufactured(1989);
         //System.out.println("Novo godiste je: " + opel.getYearManufactured());
         //opel.checkYearManufactured(opel.getYearManufactured());
+        
+        opel.setLights(false);
+        opel.printAttributes();
     }
 
 }
