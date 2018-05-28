@@ -27,6 +27,8 @@ public class Main {
         audi.printAttributes();
         audi.travel(30);
         audi.printAttributes();
+//        audi.getIn(1);
+//        audi.getOut(2);
 
         System.out.println("Trenutno godiste je: " + audi.getYearManufactured());
         audi.checkYearManufactured(audi.getYearManufactured());
@@ -51,6 +53,30 @@ public class Main {
         
         opel.setLights(false);
         opel.printAttributes();
+        
+        Car testCar = new Car ();
+        
+        testCar.getIn();
+        
+        testCar.getOut();        
+        testCar.getOut();
+        testCar.getOut();
+        testCar.getOut();
+        testCar.getOut();
+        testCar.getOut();
+        testCar.getOut();
+        testCar.getOut();
+        testCar.getOut();
+
+        
+//        testCar.getOut();
+//        testCar.getOut();
+//        testCar.getOut();
+//        testCar.getIn();
+//        testCar.getIn();
+      
+//          testCar.getOut();
+//          testCar.getOut();
     }
 
 }
