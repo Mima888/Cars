@@ -56,17 +56,17 @@ public class Main {
         
         Car testCar = new Car ();
         
-        testCar.getIn();
+//        testCar.getIn();
         
-        testCar.getOut();        
-        testCar.getOut();
-        testCar.getOut();
-        testCar.getOut();
-        testCar.getOut();
-        testCar.getOut();
-        testCar.getOut();
-        testCar.getOut();
-        testCar.getOut();
+//        testCar.getOut();        
+//        testCar.getOut();
+//        testCar.getOut();
+//        testCar.getOut();
+//        testCar.getOut();
+//        testCar.getOut();
+//        testCar.getOut();
+//        testCar.getOut();
+//        testCar.getOut();
 
         
 //        testCar.getOut();
@@ -77,6 +77,9 @@ public class Main {
       
 //          testCar.getOut();
 //          testCar.getOut();
+
+        testCar.getInDoWhile();
+        testCar.getOutDoWhile();
     }
 
 }
