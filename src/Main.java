@@ -1,4 +1,6 @@
 
+import loops.Loops;
+
 /**
  *
  * @author mica
@@ -50,14 +52,12 @@ public class Main {
         //opel.setYearManufactured(1989);
         //System.out.println("Novo godiste je: " + opel.getYearManufactured());
         //opel.checkYearManufactured(opel.getYearManufactured());
-        
         opel.setLights(false);
         opel.printAttributes();
-        
-        Car testCar = new Car ();
-        
+
+        Car testCar = new Car();
+
 //        testCar.getIn();
-        
 //        testCar.getOut();        
 //        testCar.getOut();
 //        testCar.getOut();
@@ -67,19 +67,36 @@ public class Main {
 //        testCar.getOut();
 //        testCar.getOut();
 //        testCar.getOut();
-
-        
 //        testCar.getOut();
 //        testCar.getOut();
 //        testCar.getOut();
 //        testCar.getIn();
 //        testCar.getIn();
-      
 //          testCar.getOut();
 //          testCar.getOut();
+//        testCar.getInDoWhile();
+//        testCar.getOutDoWhile();
+//            testCar.getIn();
+        testCar.getOut(5);
+        System.out.println("________________________________");
 
-        testCar.getInDoWhile();
-        testCar.getOutDoWhile();
+//            int x = 5;
+//            while(x > 0) {
+//                System.out.println(x);
+//                x = x-1;
+//            }
+//            for (int i = 0; i < 10; i++) {
+//                System.out.println(i);
+//            }
+//            Loops loop1 = new Loops();
+//            loop1.testForLoop();
+//            loop1.testWhileLoop();
+//            Loops.testWhileLoop();
+//            Loops.testForLoop();
+//        Loops.testDoubleForLoop();
+
+        Loops.printTable();
+
     }
 
 }

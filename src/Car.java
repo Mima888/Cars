@@ -153,7 +153,7 @@ public class Car {
         return this.lights;
     }
 
-//    public void getIn() {
+    public void getIn() {
 ////        if (this.brojPutnika < this.maxBrojPutnika) {
 ////            this.brojPutnika += 1;
 ////            System.out.println("Trenutni broj putnika je: " + this.brojPutnika);
@@ -161,44 +161,75 @@ public class Car {
 ////            System.out.println("Dostignut je maksimalni broj putnika, a to je: " + this.maxBrojPutnika);
 ////        }
 //
-//        while (this.brojPutnika < this.maxBrojPutnika) {
-//            this.brojPutnika += 1;
-//            System.out.println("Trenutni broj putnika je: " + this.brojPutnika);
-//            if (this.brojPutnika == this.maxBrojPutnika) {
-//                System.out.println("Dostignut je maksimalni broj putnika, a to je: " + this.maxBrojPutnika);
-//            }
-//        }
-//    }
-//    public void getOut() {
+        while (this.brojPutnika < this.maxBrojPutnika) {
+            this.brojPutnika += 1;
+            System.out.println("Trenutni broj putnika je: " + this.brojPutnika);
+            if (this.brojPutnika == this.maxBrojPutnika) {
+                System.out.println("Dostignut je maksimalni broj putnika, a to je: " + this.maxBrojPutnika);
+            }
+        }
+    }
+
+    public void getOut(int brojPutnika) {
 //        if (this.brojPutnika > 0) {
 //            this.brojPutnika = this.brojPutnika - 1;
 //            System.out.println("Trenutni broj putnika je: " + this.brojPutnika);
 //        } else {
 //            System.out.println("Ostalo je: " + this.brojPutnika + " putnika");
 //        }
+
+        while (brojPutnika <= this.maxBrojPutnika && brojPutnika > 0) {
+            brojPutnika--;
+            System.out.println("Trenutni broj putnika je: " + brojPutnika);
+//            if (this.brojPutnika == this.maxBrojPutnika) {
+//                System.out.println("Izasli su svi putnici.");
+//            }
+        }
+//    public void getIn(int brojPutnika) {
+//
+////        brojPutnika = brojPutnika + this.brojPutnika;    
+////        System.out.println("U autu je bilo " + this.brojPutnika + " putnik/a, a sada ima: " + brojPutnika + " Trenutni broj putnika je: " + brojPutnika);
+//        if (this.brojPutnika + brojPutnika < this.maxBrojPutnika) {
+//            this.brojPutnika += brojPutnika;
+//            System.out.println("Trenutni broj putnika je: " + this.brojPutnika);
+//        } else {
+//            System.out.println("Dostignut je maksimalni broj putnika, a to je: " + this.maxBrojPutnika);
+//        }
+//
 //    }
 
-    public void getInDoWhile() {
-
-        do {
-            System.out.println("Trenutni broj putnika je: " + this.brojPutnika);
-
-            if (this.brojPutnika == this.maxBrojPutnika) {
-                System.out.println("Dostignut je maksimalni broj putnika, a to je: " + this.maxBrojPutnika);
-            }
-            this.brojPutnika += 1;
-        } while (this.brojPutnika < this.maxBrojPutnika);
+//    public void getOut(int brojPutnika) {
+//
+////        brojPutnika = brojPutnika - this.brojPutnika;
+////        System.out.println("Iz auta je izaslo: " + brojPutnika + " Trenutni broj putnika je: " + this.brojPutnika);
+////    }
+//        if (this.brojPutnika > brojPutnika) {
+//            this.brojPutnika = this.brojPutnika - brojPutnika;
+//            System.out.println("Trenutni broj putnika je: " + this.brojPutnika);
+//        } else {
+//            System.out.println("Ostalo je: " + this.brojPutnika + " putnika");
+//        }
+//    public void getInDoWhile() {
+//
+//        do {
+//            System.out.println("Trenutni broj putnika je: " + this.brojPutnika);
+//
+//            if (this.brojPutnika == this.maxBrojPutnika) {
+//                System.out.println("Dostignut je maksimalni broj putnika, a to je: " + this.maxBrojPutnika);
+//            }
+//            this.brojPutnika += 1;
+//        } while (this.brojPutnika < this.maxBrojPutnika);
+//    }
+//    
+//    public void getOutDoWhile() {
+//        do {
+//           System.out.println("Ostalo je: " + this.brojPutnika + " putnika");
+//           if (this.brojPutnika > 0) {
+//            this.brojPutnika = this.brojPutnika - 1;
+//            System.out.println("Trenutni broj putnika je: " + this.brojPutnika);
+//        }
+//           
+//        } while (this.brojPutnika > 0);
+//    }
     }
-    
-    public void getOutDoWhile() {
-        do {
-           System.out.println("Ostalo je: " + this.brojPutnika + " putnika");
-           if (this.brojPutnika > 0) {
-            this.brojPutnika = this.brojPutnika - 1;
-            System.out.println("Trenutni broj putnika je: " + this.brojPutnika);
-        }
-           
-        } while (this.brojPutnika > 0);
-    }
-
 }
