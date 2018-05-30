@@ -27,19 +27,18 @@ public class Loops {
 
         }
     }
-    
+
     public static void printTable() {
-        
+
         for (int i = 0; i <= 10; i++) {
             for (int j = 1; j <= 10; j++) {
                 int x = i * j;
                 System.out.println(i + " * " + j + " = " + x);
-                }
-                
             }
+
         }
     }
-    
+
     // 0 * 0 = 0
     // 0 * 1 = 0
     // ....
@@ -47,4 +46,22 @@ public class Loops {
     // 1 * 1 = 1
     // ...
     // 9 * 9 = 81
+    //Uradi: (0,0) (0,1) (0,2) ... (0,9)
+    //       (1.0) (1,1)...
+    //       ...
+    //       (9,0) (9,1) ...
+    public static void Coordinates() {
+            
+        String r = "";
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                r += "(" + i + "," + j + ") ";
+                if(j == 9) {
+                    r+= "\n";
+                }
+            }
 
+        }
+        System.out.println(r);   
+    }
+}
