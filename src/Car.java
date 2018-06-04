@@ -169,8 +169,6 @@ public class Car {
 //            }
 //        }
 //    }
-
-
     public void getIn(int brojPutnika) {
         System.out.println("U autu je " + this.brojPutnika + " putnik/a. Uslo je: " + brojPutnika + " putnika.");
         brojPutnika = brojPutnika + this.brojPutnika;
@@ -178,7 +176,7 @@ public class Car {
         if (brojPutnika > this.maxBrojPutnika) {
             int tempPutnici = (this.maxBrojPutnika - brojPutnika) * -1;
             System.out.println("Maximalan broj putnika je: " + this.maxBrojPutnika + ". Broj putnika koji nisu usli je: " + tempPutnici);
-            
+
         } else {
             System.out.println("Trenutni broj putnika je: " + brojPutnika);
         }
@@ -186,7 +184,6 @@ public class Car {
     }
 
     public void getOut(int brojPutnika) {
-        System.out.println("Kontorla: " + this.brojPutnika);
         int tempPutnici = this.brojPutnika - brojPutnika;
 
         if (brojPutnika > 0) {

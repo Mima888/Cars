@@ -1,5 +1,8 @@
 
 import loops.Loops;
+import person.Person;
+import person.Student;
+import person.Teacher;
 
 public class Main {
 
@@ -51,7 +54,7 @@ public class Main {
 //        opel.setLights(false);
 //        opel.printAttributes();
 //
-        Car testCar = new Car();
+//        Car testCar = new Car();
 //
 ////        testCar.getIn();
 ////        testCar.getOut();        
@@ -73,9 +76,9 @@ public class Main {
 ////        testCar.getInDoWhile();
 ////        testCar.getOutDoWhile();
 ////        
-            testCar.getIn(5);
-            System.out.println("");
-            testCar.getOut(2);
+//            testCar.getIn(5);
+//            System.out.println("");
+//            testCar.getOut(2);
 //            System.out.println("Broj putnika " + testCar.brojPutnika);
 ////        System.out.println("");
 //
@@ -97,6 +100,31 @@ public class Main {
 ////        Loops.printTable();
 
 //            Loops.Coordinates();
+
+        Person osoba = new Person();
+        osoba.showData();
+        System.out.println("");
+        
+        osoba.setName("Milica");
+        osoba.setSurname("Subotic");
+        osoba.setJmbg("2806993715036");
+        osoba.showData();
+        System.out.println("");
+        
+        Student studentPetar = new Student("Petar", "Petrovic", "1237538652873");
+        studentPetar.showData();
+        System.out.println("");
+        
+        Student studentMarko = new Student("Marko", "Markovic", "1111132232", "233", 3);
+        studentMarko.showData();
+        System.out.println("");
+        
+        Teacher uciteljZika = new Teacher("Zika", "Zikic", "85353764", "Matematika", 10, "male");
+        uciteljZika.showData();
+        
+        
+        
+
     }
 
 }
